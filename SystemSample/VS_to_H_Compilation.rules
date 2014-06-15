@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="VS Compilation"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="VertexShader"
+			DisplayName="VertexShader"
+			CommandLine="fxc /nologo /T vs_2_0 /E $(InputName) /Fh $(InputName)_vs.h $(InputName).vs"
+			Outputs="$(InputName)_vs.h"
+			AdditionalDependencies="$(InputName).sh"
+			FileExtensions="*.vs"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

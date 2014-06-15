@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="PS Compilation"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="PixelShader"
+			DisplayName="PixelShader"
+			CommandLine="fxc /nologo /T ps_2_0 /E $(InputName) /Fh $(InputName)_ps.h $(InputName).ps"
+			Outputs="$(InputName)_ps.h"
+			AdditionalDependencies="$(InputName).sh"
+			FileExtensions="*.ps"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>
